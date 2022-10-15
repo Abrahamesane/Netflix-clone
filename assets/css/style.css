@@ -1,18 +1,56 @@
 /* Main css file for Netflix Clone */
+/* Global */
+* {
+    letter-spacing: 0px !important;
+}
+body, html {
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(243, 243, 243);
+  color: rgb(51, 51, 51);
+  direction: ltr;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+html {
+  text-size-adjust: 100%;
+  font-family: sans-serif;
+}
 
 /* Header Area */
+  nav {
+    background-color: transparent;
+    inset: 0px;
+    height: 5rem;
+    margin: 0px 3.5rem;
+    max-width: 1920px;
+    padding-top: 20px;
+    position: relative;
+    transition: background-color 0.5s ease 0s;
+    width: 100%;
+    z-index: 10;
+  }
   
+  .header-top-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+  }
 
   /* Logo */
-  nav .logo {
+  nav .logo-container {
     height: 2.8125rem;
     width: 10.4375rem;
     padding-top: 0px;
+    margin-right: auto;
   }
 
   .svg-netflix-logo {
     fill: rgb(229, 9, 20);
     line-height: normal;
+    margin-right: auto;
   }
 
   .no-click {
@@ -24,3 +62,27 @@
     position: absolute;
     top: -9999px;
   }
+
+  /* Options */
+  .options-container {
+    display: inline-block;
+    margin: 0px 2rem 0px 0.75rem;
+    width: auto;
+  }
+  
+  .options-container select {
+    color: inherit;
+    font: inherit;
+    margin: 0px;
+  }
+
+  nav #lang-switcher {
+    line-height: 1.3em;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+    white-space: nowrap;
+    text-indent: 0px;
+    display: inline-block;
+    position: relative;
+  }
+
