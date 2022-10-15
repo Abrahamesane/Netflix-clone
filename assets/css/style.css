@@ -7,3 +7,6 @@
   position: absolute;
   top: -9999px;
 }
+ .no-click {
+  pointer-events: none;
+ }
