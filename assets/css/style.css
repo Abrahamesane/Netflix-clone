@@ -1,1 +1,9 @@
-/* Main css file */
+/* Main css file for Netflix Clone */
+
+/* Header Area */
+
+.screen-reader-text {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
