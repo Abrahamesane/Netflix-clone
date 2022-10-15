@@ -1,12 +1,26 @@
 /* Main css file for Netflix Clone */
 
 /* Header Area */
+  
 
-.screen-reader-text {
-  left: -9999px;
-  position: absolute;
-  top: -9999px;
-}
- .no-click {
-  pointer-events: none;
- }
+  /* Logo */
+  nav .logo {
+    height: 2.8125rem;
+    width: 10.4375rem;
+    padding-top: 0px;
+  }
+
+  .svg-netflix-logo {
+    fill: rgb(229, 9, 20);
+    line-height: normal;
+  }
+
+  .no-click {
+    pointer-events: none;
+  }
+
+  .screen-reader-text {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+  }
