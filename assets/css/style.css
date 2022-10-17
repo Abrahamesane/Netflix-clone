@@ -1,5 +1,10 @@
 /* Main css file for Netflix Clone */
 
+/* Fonts */
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url('http://fonts.cdnfonts.com/css/helvetica-255');
+@import url('http://fonts.cdnfonts.com/css/arial');
+                
 /* Global rules */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
@@ -74,6 +79,7 @@ body, html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
+
 html {
   text-size-adjust: 100%;
   font-family: sans-serif;
