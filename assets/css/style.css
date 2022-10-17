@@ -98,9 +98,11 @@ html {
     width: 100%;
     display: block;
   }
+  
   header {
     margin: 0 auto;
     background-color: #000;
+    width: 100%;
   }
 
   .container {
@@ -109,7 +111,6 @@ html {
     height: 5rem;
     left: 0;
     margin: 0 auto;
-    max-width: 1920px;
     padding-top: 20px;
     position: relative;
     right: 0;
