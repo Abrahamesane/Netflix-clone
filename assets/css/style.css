@@ -87,6 +87,11 @@ html {
 }
 
 /* Header Area */
+  header {
+    margin: 0 auto;
+    background-color: #000;
+  }
+
   .container {
     background-color: transparent;
     bottom: 0;
@@ -237,6 +242,32 @@ html {
     top: 0;
   }
 
+  .our-story-card-background, .concord-img-wrapper {
+    height: 733.375px;
+  }
+  .our-story-card-background, .concord-img-wrapper {
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+  }
+  
+  .concord-img {
+    transform: none;
+  }
+
+  .concord-img img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .our-story-hero-card .concord-img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: scale(1.25) translateY(-10%);
+    width: 100%;
+  }
+  
   .our-story-card-text {
     margin: 0 auto;
     max-width: 950px;
@@ -275,4 +306,10 @@ html {
 
   .our-story-subtitle {
 
+  }
+
+  .center-pixel {
+    left: 50%;
+    position: absolute;
+    top: 50%;
   }
