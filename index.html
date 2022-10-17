@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="Watch Netflix movies &amp; TV shows online or stream right to your smart TV, 
   game console, PC, Mac, mobile, tablet and more." name="description">
@@ -27,7 +26,7 @@
             <!-- Headers logo -->
             <div class="logo-container">
 
-              <span class="svg-netflix-logo no-click">
+              <span class="svg-netflix-logo nfLogo no-click">
                 <!-- Inline svg logo -->
                 <svg viewBox="0 0 111 30" data-uia="netflix-logo" class="svg-icon svg-icon-netflix-logo" aria-hidden="true" focusable="false">
                   <g id="netflix-logo">
@@ -35,17 +34,16 @@
                     </path>
                   </g>              
                 </svg>
-              </span>
-
-              <span class="screen-reader-text">
-                Netflix
+                <span class="screen-reader-text">
+                  Netflix
+                </span>
               </span>
 
             </div>
             <!-- Headers options -->
             <div class="options-container">
 
-              <select name="lang-switcher" id="lang-switcher" placeholder="lang-switcher">
+              <select name="lang-switcher-container" id="lang-switcher-container" placeholder="lang-switcher-container">
                 <option lang="el" value="/gr/" data-language="el" data-country="GR">
                   Ελληνικά
                 </option>
@@ -54,11 +52,11 @@
                 </option>
               </select>
 
-              <a href="">Sign in</a>
+              <a href="#" class="authLinks redButton">Sign In</a>
 
             </div>
+
           </div>
-          
         </nav>
         <!-- Our Story section -->
         <section class="our-story">
