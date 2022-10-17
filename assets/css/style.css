@@ -188,3 +188,45 @@ html {
     position: relative;
   }
 
+/* Our Story */
+  .our-story-hero-card {
+    background: transparent;
+    border-bottom: 8px solid #222;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 50px 5%;
+    position: relative;
+  }
+  @media only screen and (min-width: 1450px), 
+  only screen and (min-width: 550px) and (max-width: 949px), 
+  only screen and (min-width: 950px) and (max-width: 1449px) {
+    .our-story-hero-card {
+      padding: 70px 45px;
+    }
+  }
+
+  .our-story-card-background {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -70px;
+    z-index: 0;
+  }
+
+  @media only screen and (min-width: 1450px), 
+  only screen and (min-width: 950px) and (max-width: 1449px) {
+    .our-story-card-background {
+      top: -100px;
+    }
+  }
+  
+  .our-story-card-background .concord-img-wrapper {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
