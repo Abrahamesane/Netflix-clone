@@ -245,9 +245,19 @@ html {
   .our-story-card-background, .concord-img-wrapper {
     height: 733.375px;
   }
-  .our-story-card-background, .concord-img-wrapper {
+  .our-story-hero-card.vlv .concord-img-gradient {
     background: rgba(0,0,0,.4);
     background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+  }
+
+  .our-story-hero-card .concord-img-gradient {
+    background: rgba(0,0,0,.5);
+    background-image: linear-gradient(0deg,transparent 50%,rgba(0,0,0,.7)),radial-gradient(50% 100%,transparent 0,rgba(0,0,0,.7) 100%);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   
   .concord-img {
@@ -267,7 +277,7 @@ html {
     transform: scale(1.25) translateY(-10%);
     width: 100%;
   }
-  
+
   .our-story-card-text {
     margin: 0 auto;
     max-width: 950px;
