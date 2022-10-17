@@ -197,12 +197,19 @@ html {
     padding: 50px 5%;
     position: relative;
   }
+
   @media only screen and (min-width: 1450px), 
   only screen and (min-width: 550px) and (max-width: 949px), 
   only screen and (min-width: 950px) and (max-width: 1449px) {
     .our-story-hero-card {
       padding: 70px 45px;
     }
+  }
+
+  .our-story-hero-card h1, 
+  .our-story-hero-card h2 {
+    margin: 0 auto;
+    max-width: 640px;
   }
 
   .our-story-card-background {
@@ -221,7 +228,7 @@ html {
       top: -100px;
     }
   }
-  
+
   .our-story-card-background .concord-img-wrapper {
     bottom: 0;
     left: 0;
@@ -230,3 +237,42 @@ html {
     top: 0;
   }
 
+  .our-story-card-text {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 75px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .our-story-subtitle, .our-story-card-text {
+    font-size: 1.625rem;
+    font-weight: 400;
+  }
+
+  .our-story-title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  @media only screen and (min-width: 1450px), 
+  only screen and (min-width: 950px) and (max-width: 1449px) {
+    .our-story-hero-card,  
+    .our-story-title h1 {
+      font-size: 4rem;
+    }
+  }
+  
+  @media only screen and (min-width: 950px) and (max-width: 1449px) {
+    .our-story-hero-card,  
+    .our-story-title h1 {
+    font-size: 3.125rem;
+    }
+  }
+
+  .our-story-subtitle {
+
+  }
