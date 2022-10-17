@@ -71,6 +71,7 @@ a {
 * {
     letter-spacing: 0px !important;
 }
+
 body, html {
   -webkit-font-smoothing: antialiased;
   background-color: rgb(243, 243, 243);
@@ -101,6 +102,12 @@ html {
     width: 100%;
     z-index: 10;
   }
+  
+  @media only screen and (min-width: 950px) and (max-width: 1449px){
+    .container{
+        height: 4rem;
+    }
+  }
 
   nav {
     inset: 0px;
@@ -128,10 +135,23 @@ html {
     margin-right: auto;
   }
 
+  @media only screen and (min-width: 950px) and (max-width: 1449px) {
+    nav .logo-container {
+      height: 2.25rem;
+      width: 8.375rem;
+    }
+  } 
+
+  @media only screen and (min-width: 550px) and (max-width: 949px) {
+    nav .logo-container {
+      height: 2rem;
+      width: 6.75rem;
+    }
+  }
+
   .svg-netflix-logo {
     fill: rgb(229, 9, 20);
     line-height: normal;
-    margin-right: auto;
   }
 
   .no-click {
