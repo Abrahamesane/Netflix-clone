@@ -58,6 +58,16 @@ h6 {
 
 }
 
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
 a {
   margin:0;
   padding:0;
@@ -259,6 +269,126 @@ html {
     position: relative;
     width: 100%;
   }
+
+  /* lang-switcher::before */
+  .ui-select-wrapper .select-arrow.medium:before {
+    left: 15px;
+    top: 11px;
+  }  
+
+  .ui-select-wrapper .select-arrow.prefix:before {
+    color: #000;
+    font-family: nf-icon;
+    font-size: 16px;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .lang-selection-container .ui-select-wrapper .select-arrow.prefix:before {
+    top: 14px;
+  }
+
+  .ui-select-wrapper .select-arrow.prefix.globe:before {
+    content: "\e896"; 
+  }
+
+  .our-story-language-selector .lang-selection-container .select-arrow.prefix:before, 
+  .our-story-language-selector .lang-selection-container .select-arrow:after {
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .our-story-language-selector .lang-selection-container .select-arrow.prefix:before {
+    font-size: .75rem;
+    left: 0.5rem;
+  }
+  
+  /* lang-switcher - header */
+  .ui-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid #b3b3b3;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .lang-selection-container .ui-select {
+    background-color: #fff;
+    background-image: linear-gradient(180deg,#fff,#f7f7f7);
+    font-size: 13px;
+  }
+  
+  .ui-select.medium {
+    padding: 12px;
+  }
+
+  .ui-select-wrapper .select-arrow.prefix .ui-select.medium {
+    line-height: 1.7;
+    padding-left: 50px;
+    text-indent: 2px;
+  }
+  
+  .our-story-language-selector .lang-selection-container .select-arrow.prefix .ui-select {
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    padding: 0.25rem 1.375rem;
+  }
+
+  @media only screen and (min-width: 1450px), 
+  only screen and (min-width: 550px) and (max-width: 949px), 
+  only screen and (min-width: 950px) and (max-width: 1449px) {
+    .our-story-language-selector .lang-selection-container .select-arrow.prefix .ui-select {
+        padding: 0.5rem 1.375rem;
+    }
+  
+  }
+
+  .lang-selection-container .ui-select-wrapper .select-arrow.prefix .ui-select.medium {
+    padding-right: 26px;
+    text-indent: 0;
+  }
+
+  .our-story-language-selector .lang-selection-container .select-arrow.prefix .ui-select.medium {
+    line-height: 1.3em;
+    overflow: hidden;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+    white-space: nowrap;
+  }
+
+  /* options */
+  option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+  }
+
+
+
+  /* lang-switcher::after */
+  .ui-select-wrapper .select-arrow:after {
+    color: #000;
+    content: "\e898";
+    font-family: nf-icon;
+    font-size: 6px;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .ui-select-wrapper .select-arrow.medium:after {
+    right: 10px;
+    top: 18px;
+  }
+
+ 
   
   /* Sing in button */
   .our-story-header-language-selector .authLinks.redButton {
