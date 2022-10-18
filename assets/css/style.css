@@ -198,20 +198,66 @@ html {
   }
 
   /* Language selector */
-  .lang-switcher-container {
+  .lang-selection-container {
     margin-top: 20px;
   }
-
-  .our-story-header-language-selector .lang-switcher-container {
+  
+  .our-story-language-selector .lang-selection-container {
     display: inline-block;
     margin: 0 0.75rem;
   }
-
+  
   @media only screen and (min-width: 1450px), 
-  only screen and (min-width: 950px) and (max-width: 1449px) {
-    .our-story-header-language-selector .lang-switcher-container {
+  only screen and (min-width: 950px) and (max-width: 1449px){
+    .our-story-language-selector .lang-selection-container {
       margin-right: 2rem;
-    } 
+    }
+  }
+  
+  .ui-select-wrapper {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .lang-selection-container .ui-select-wrapper {
+    width: auto;
+  }
+
+  ui-label, .ui-label-no-margin {
+    color: #8c8c8c;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .ui-label {
+    margin-bottom: 6px;
+  }
+
+  .lang-selection-container .ui-label {
+    clip: rect(0 0 0 0);
+    border: 0;
+    display: block;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .ui-select-wrapper>.ui-label {
+    margin-bottom: 0;
+  }
+
+  label {
+    cursor: default;
+  }
+
+  .ui-select-wrapper .select-arrow {
+    display: inline-block;
+    position: relative;
+    width: 100%;
   }
   
   /* Sing in button */
