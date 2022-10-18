@@ -102,11 +102,6 @@ html {
 }
 
 /* Header Area */
-  header-container {
-    
-  }
-
-
   .our-story-header-wrapper {
     background-color: transparent;
     bottom: 0;
@@ -202,7 +197,7 @@ html {
     top: -9999px;
   }
 
-  /* Options */
+  /* Language selector */
   .lang-switcher-container {
     margin-top: 20px;
   }
@@ -219,7 +214,7 @@ html {
     } 
   }
   
-
+  /* Sing in button */
   .our-story-header-language-selector .authLinks.redButton {
     float: none;
     margin-top: 0;
@@ -246,7 +241,7 @@ html {
   }
 
 
-/* Our Story */
+  /* Our Story */
   .our-story-cards {
     margin: 0 auto;
   }
@@ -413,7 +408,7 @@ html {
   }
   }
 
-/* FORM GET STARTED - EMAIL INPUT */
+  /* FORM GET STARTED - EMAIL INPUT */
   .email-form {
     display: flex;
     flex-direction: column;
@@ -580,7 +575,7 @@ html {
     }
   }
   
-/* FORM GET STARTED BUTTON */
+  /* FORM GET STARTED BUTTON */
   @media only screen and (min-width: 1450px), 
   only screen and (min-width: 950px) and (max-width: 1449px) {
     .email-form-lockup .our-story-cta-container {
