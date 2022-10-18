@@ -423,10 +423,10 @@ html {
   .our-story-cards {
     margin: 0 auto;
   }
-
+  
   .our-story-card {
     background: transparent;
-    border-bottom: 8px solid #222;
+    border-bottom: 8px solid red;
     color: #fff;
     margin-bottom: 0;
     padding: 50px 5%;
@@ -521,9 +521,6 @@ html {
     right: 0;
     top: 0;
   }
-
-
-
 
   .hero-card .our-story-card-text {
     margin: 0 auto;
