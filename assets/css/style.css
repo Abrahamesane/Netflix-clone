@@ -426,7 +426,7 @@ html {
   
   .our-story-card {
     background: transparent;
-    border-bottom: 8px solid red;
+    border-bottom: 8px solid #222;
     color: #fff;
     margin-bottom: 0;
     padding: 50px 5%;
@@ -439,12 +439,6 @@ html {
     .our-story-card {
       padding: 70px 45px;
     }
-  }
-
-  .our-story-hero-card h1, 
-  .our-story-hero-card h2 {
-    margin: 0 auto;
-    max-width: 640px;
   }
 
   .our-story-card-background {
@@ -472,10 +466,6 @@ html {
     top: 0;
   }
 
-  .our-story-card-background, .concord-img-wrapper {
-    height: 733.375px;
-  }
-
   .hero-card.vlv .our-story-card-background .concord-img-wrapper {
     bottom: 0;
   }
@@ -491,7 +481,7 @@ html {
   .hero-card.vlv .concord-img {
     transform: none;
   }
-  
+
   .hero-card .concord-img {
     height: 100%;
     -o-object-fit: cover;
@@ -532,7 +522,8 @@ html {
     z-index: 1;
   }
 
-  .our-story-card-subtitle, .our-story-card-text {
+  .our-story-card-subtitle,
+  .our-story-card-text {
     font-size: 1.625rem;
     font-weight: 400;
   }
