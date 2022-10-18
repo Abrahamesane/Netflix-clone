@@ -392,12 +392,13 @@ html {
  
   
   /* Sing in button */
-  .our-story-header-language-selector .authLinks.redButton {
+  .our-story-language-selector .authLinks.redButton,
+  .our-story-language-selector .our-story-cta-containe {
     float: none;
     margin-top: 0;
     white-space: nowrap;
   }
-
+  
   .authLinks.redButton {
     background-color: #e50914;
     float: right;
