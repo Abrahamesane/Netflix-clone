@@ -134,16 +134,14 @@ html {
     }
   }
   
-  .our-story-language-selector {
-    align-items: flex-start;
-    display: flex;
-    flex-flow: row nowrap;
-    height: auto;
-    justify-content: flex-start;
-    padding-top: 0.5rem;
-    margin: 0 3.5rem;
-    position: relative;
-  }
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px), 
+  only screen and (min-width: 550px) and (max-width: 949px) {
+    .our-story-header-wrapper {
+        height: 45px;
+    }
+  }  
 
   .our-story-header {
     height: 100%;
@@ -151,28 +149,29 @@ html {
     position: relative;
   }
 
-  /* Logo */
-  .our-story-language-selector .our-story-logo {
-    margin-right: auto;
-  }
-  
-  .our-story-language-selector .nfLogo .svg-icon-netflix-logo {
-    height: 1.5rem;
-    padding-top: 0;
-    width: auto;
-  }
-
-  @media only screen and (min-width: 1450px) {
-    .our-story-language-selector .nfLogo .svg-icon-netflix-logo {
-      height: 2.8125rem;
-      width: 10.4375rem;
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px) {
+    .our-story-header {
+        margin: 0 5%;
     }
   }
+
+  /* Logo */
 
   .nfLogo .svg-icon-netflix-logo {
     height: 45px;
     padding-top: 0.5rem;
     width: 167px;
+  }
+
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px) {
+    .nfLogo .svg-icon-netflix-logo {
+        height: 24px;
+        width: 30%;
+    }
   }
 
   .nfLogo {
@@ -182,15 +181,15 @@ html {
 
   @media only screen and (min-width: 950px) and (max-width: 1449px) {
     .our-story-language-selector .nfLogo .svg-icon-netflix-logo {
-      height: 2.25rem;
-      width: 8.375rem;
+      height: 36px;
+      width: 134px;
     }
   }
 
   @media only screen and (min-width: 550px) and (max-width: 949px) {
     .our-story-language-selector .nfLogo .svg-icon-netflix-logo {
-      height: 2rem;
-      width: 6.75rem;
+      height: 32px;
+    width: 108px;
     }
   }
 
@@ -392,12 +391,6 @@ html {
  
   
   /* Sing in button */
-  .our-story-language-selector .authLinks.redButton,
-  .our-story-language-selector .our-story-cta-containe {
-    float: none;
-    margin-top: 0;
-    white-space: nowrap;
-  }
   
   .authLinks.redButton {
     background-color: #e50914;
@@ -408,11 +401,21 @@ html {
     padding: 7px 17px;
   }
 
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px) {
+    .authLinks.redButton {
+        font-size: .9rem;
+        margin-top: 0.35rem;
+        padding: 0.25rem 0.5rem;
+    }
+  }
+
   .authLinks {
     border-radius: 3px;
     color: #fff;
     margin-top: 0.5rem;
-  }
+  }  
   
   a {
     text-decoration: none;
@@ -455,6 +458,28 @@ html {
   only screen and (min-width: 950px) and (max-width: 1449px) {
     .our-story-card-background {
       top: -100px;
+    }
+  }
+
+  .concord-img-wrapper {
+    height: 733.375px;;
+  }
+
+  @media only screen and (max-width: 550px) {
+    .concord-img-wrapper {
+      height: 502.594px;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .concord-img-wrapper {
+      height:  697px;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .concord-img-wrapper {
+      height:  721px;
     }
   }
 
@@ -522,16 +547,34 @@ html {
     z-index: 1;
   }
 
+  @media only screen and (min-width: 400px) and (max-width: 549px) {
+    .hero-card .our-story-card-text {
+        padding: 30px 0;
+    }
+  }
+
   .our-story-card-subtitle,
   .our-story-card-text {
     font-size: 1.625rem;
     font-weight: 400;
+  }
+
+  @media only screen and (max-width: 349px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (min-width: 400px) and (max-width: 549px) {
+    .our-story-card-subtitle, .our-story-card-text {
+        font-size: 1.125rem;
+    }
   }
   
   .our-story-card-title {
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
+  }
+
+  @media only screen and (max-width: 349px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (min-width: 400px) and (max-width: 549px){
+    .our-story-card-title {
+      font-size: 1.625rem;
+    }
   }
 
   .hero-card h1, .hero-card h2 {
@@ -595,6 +638,12 @@ html {
     padding: 0 5%;
   }
 
+  @media only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 550px) and (max-width: 949px) {
+    .email-form-title {
+        padding: 0 10%;
+    }
+  }
+
   @media only screen and (min-width: 1450px), 
   only screen and (min-width: 950px) and (max-width: 1449px) {
     .email-form-title {
@@ -644,6 +693,15 @@ html {
   ul.structural>li {
     list-style: none;
     margin-left: 0;
+  }
+
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px), 
+  only screen and (min-width: 550px) and (max-width: 949px) {
+    .email-form-lockup .field-email {
+        margin-bottom: 0;
+    }
   }
 
   .nfInput {
@@ -756,6 +814,16 @@ html {
     float: none;
   }
 
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px), 
+  only screen and (min-width: 550px) and (max-width: 949px) {
+    .email-form-lockup .our-story-cta-container {
+      margin-top: 0;
+      padding: 0;
+    }
+  }
+
   button {
     overflow: visible;
     font: inherit;
@@ -839,6 +907,13 @@ html {
       border-left: 1px solid #333;
       border-top-left-radius: 0;
       margin: 0!important;
+    }
+  }
+
+  @media only screen and (min-width: 950px) and (max-width: 1449px) {
+    .nmhp-cta-extra-large {
+      font-size: 1.625rem;
+      min-height: 60px;
     }
   }
 
