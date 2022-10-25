@@ -160,6 +160,20 @@ html {
     width: 167px;
   }
 
+  @media only screen and (min-width: 950px) and (max-width: 1449px) {
+    .nfLogo .svg-icon-netflix-logo {
+      height: 36px;
+      width: 134px;
+    }
+  }
+
+  @media only screen and (min-width: 550px) and (max-width: 949px) {
+    .nfLogo .svg-icon-netflix-logo {
+      height: 32px;
+      width: 108px;
+    }
+  }
+
   @media only screen and (max-width: 349px), 
   only screen and (min-width: 350px) and (max-width: 399px), 
   only screen and (min-width: 400px) and (max-width: 549px) {
@@ -169,23 +183,36 @@ html {
     }
   }
 
-  .nfLogo {
-    fill: #e50914;
-    line-height: normal;
-  }
-
-  @media only screen and (min-width: 950px) and (max-width: 1449px) {
-    .our-story-language-selector .nfLogo .svg-icon-netflix-logo {
-      height: 36px;
-      width: 134px;
-    }
+  .nfLogo .svg-icon-netflix-logo {
+    height: 1.5rem;
+    padding-top: 0;
+    width: auto;
   }
 
   @media only screen and (min-width: 550px) and (max-width: 949px) {
-    .our-story-language-selector .nfLogo .svg-icon-netflix-logo {
-      height: 32px;
-    width: 108px;
+    .nfLogo .svg-icon-netflix-logo {
+      height: 2rem;
+      width: 6.75rem;
     }
+  }
+
+  @media only screen and (min-width: 950px) and (max-width: 1449px) {
+    .nfLogo .svg-icon-netflix-logo {
+      height: 2.25rem;
+      width: 8.375rem;
+    }
+  }
+
+  @media only screen and (min-width: 1450px) {
+    .nfLogo .svg-icon-netflix-logo {
+      height: 2.8125rem;
+      width: 10.4375rem;
+    }
+  }
+
+  .nfLogo {
+    fill: #e50914;
+    line-height: normal;
   }
 
   svg:not(:root) {
@@ -439,6 +466,12 @@ html {
     }
   }
 
+  .our-story-card {
+    height: 100%;
+    max-width: none;
+    width: auto;
+  }
+
   .our-story-card-background {
     bottom: 0;
     left: 0;
@@ -456,40 +489,6 @@ html {
     }
   }
 
-  .concord-img-wrapper {
-    height: 733.375px;;
-  }
-
-  @media only screen and (max-width: 550px) {
-    .concord-img-wrapper {
-      height: 502.594px;
-    }
-  }
-
-  @media only screen and (max-width: 740px) {
-    .concord-img-wrapper {
-      height:  697px;
-    }
-  }
-
-  @media only screen and (max-width: 950px) {
-    .concord-img-wrapper {
-      height:  721px;
-    }
-  }
-
-  .our-story-card-background .concord-img-wrapper {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .hero-card.vlv .our-story-card-background .concord-img-wrapper {
-    bottom: 0;
-  }
-
   .hero-card .concord-img-wrapper {
     bottom: 0;
     left: 0;
@@ -497,9 +496,13 @@ html {
     right: 0;
     top: 0;
   }
-  
-  .hero-card.vlv .concord-img {
-    transform: none;
+
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px) {
+    .hero-card .concord-img-wrapper {
+      bottom: auto;
+    }
   }
 
   .hero-card .concord-img {
@@ -509,6 +512,31 @@ html {
     transform: scale(1.25) translateY(-10%);
     width: 100%;
   }
+
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px) {
+    .hero-card .concord-img {
+      height: auto;
+      transform: none;
+    }
+  }
+
+  .hero-card.vlv .concord-img {
+    transform: none;
+  }
+
+  @media only screen and (max-width: 349px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 550px) and (max-width: 949px) and (orientation: portrait) {
+    .hero-card.vlv .concord-img {
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: auto;
+    }
+  }
   
   img {
     border: 0;
@@ -516,6 +544,10 @@ html {
     max-width: 100%;
   }
 
+  .hero-card.vlv .our-story-card-background .concord-img-wrapper {
+    bottom: 0;
+  }
+  
   .hero-card.vlv .concord-img-gradient {
     background: rgba(0,0,0,.4);
     background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,
@@ -527,8 +559,20 @@ html {
   only screen and (min-width: 400px) and (max-width: 549px), 
   only screen and (min-width: 550px) and (max-width: 949px) and (orientation: portrait) {
     .hero-card.vlv .concord-img-gradient {
-      background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 40%,transparent 75%,rgba(0,0,0,.8));
+      background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,
+      transparent 40%,transparent 75%,rgba(0,0,0,.8));
     }
+  }
+
+  .hero-card .concord-img-gradient {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(0deg, transparent 50%, 
+    rgba(0,0,0,.7)), radial-gradient(50% 100%, transparent 0, rgba(0, 0, 0, 0.7) 100%);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   @media only screen and (max-width: 349px), 
@@ -536,19 +580,40 @@ html {
   only screen and (min-width: 400px) and (max-width: 549px) {
     .hero-card .concord-img-gradient {
       background: transparent;
-      background-image: linear-gradient(0deg,#000 0,transparent 30%);
+      background-image: linear-gradient(0deg, #000 0, transparent 30%);
+    }
+    .hero-card .concord-img-gradient:before {
+      background-image: linear-gradient(180deg, #000 25%, transparent);
+      content: "";
+      height: 70px;
+      position: absolute;
+      width: 100%;
     }
   }
 
-  .hero-card .concord-img-gradient {
-    background: rgba(0,0,0,.5);
-    background-image: linear-gradient(0deg,transparent 50%,rgba(0,0,0,.7)),radial-gradient(50% 100%,transparent 0,rgba(0,0,0,.7) 100%);
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+  @media only screen and (min-width: 950px) and (max-width: 1449px) {
+    .hero-card.vlv .our-story-card-title {
+      font-size: 3.125rem;
+    }
   }
+
+  .hero-card.vlv .our-story-card-title .our-story-card-text {
+    padding: 0 0 10px;
+  }
+
+  @media only screen and (max-width: 349px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 550px) and (max-width: 949px) and (orientation: portrait) {
+    .hero-card.vlv .our-story-card-title .our-story-card-text {
+      padding: 50px 0;
+    }
+  }
+
+  .hero-card.vlv .our-story-card-title .our-story-card-title {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  }
+  
 
   .hero-card .our-story-card-text {
     margin: 0 auto;
@@ -562,7 +627,19 @@ html {
 
   @media only screen and (min-width: 400px) and (max-width: 549px) {
     .hero-card .our-story-card-text {
-        padding: 30px 0;
+      padding: 30px 0;
+    }
+  }
+
+  @media only screen and (min-width: 350px) and (max-width: 399px) {
+    .hero-card .our-story-card-text {
+      padding: 15px 0;
+    }
+  }
+
+  @media only screen and (max-width: 349px) {
+    .hero-card .our-story-card-text {
+      padding: 0;
     }
   }
 
@@ -605,22 +682,28 @@ html {
     font-size: 1.75rem;
   }
   
+  @media only screen and (min-width: 550px) and (max-width: 949px) {
+    .hero-card .our-story-card-title {
+      font-size: 3.125rem;
+    }
+  }
+
   @media only screen and (min-width: 1450px), 
   only screen and (min-width: 950px) and (max-width: 1449px) {
     .hero-card .our-story-card-title {
       font-size: 4rem;
-  }
-  }
-
-  @media only screen and (min-width: 950px) and (max-width: 1449px) {
-    .hero-card .our-story-card-title {
-    font-size: 3.125rem;
     }
   }
 
   .hero-card .our-story-card-subtitle {
     font-size: 1.125rem;
     margin: 1rem auto;
+  }
+
+  @media only screen and (min-width: 550px) and (max-width: 949px) {
+    .hero-card .our-story-card-subtitle {
+      font-size: 1.625rem;
+    }
   }
 
   @media only screen and (min-width: 1450px), 
