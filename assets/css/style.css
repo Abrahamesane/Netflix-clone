@@ -772,6 +772,15 @@ html {
     }
   }
 
+  @media only screen and (min-width: 950px) and (max-width: 1449px) {
+    .email-form-lockup .nfInput input {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      height: 60px!important;
+      min-width: 450px;
+    }
+  } 
+
   @media only screen and (min-width: 740px) { 
     .nfInput.nfInputResponsive .nfTextField {
       height: 60px;
