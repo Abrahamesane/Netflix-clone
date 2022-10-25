@@ -522,6 +522,24 @@ html {
     transparent 60%,rgba(0,0,0,.8));
   }
   
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px), 
+  only screen and (min-width: 550px) and (max-width: 949px) and (orientation: portrait) {
+    .hero-card.vlv .concord-img-gradient {
+      background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 40%,transparent 75%,rgba(0,0,0,.8));
+    }
+  }
+
+  @media only screen and (max-width: 349px), 
+  only screen and (min-width: 350px) and (max-width: 399px), 
+  only screen and (min-width: 400px) and (max-width: 549px) {
+    .hero-card .concord-img-gradient {
+      background: transparent;
+      background-image: linear-gradient(0deg,#000 0,transparent 30%);
+    }
+  }
+
   .hero-card .concord-img-gradient {
     background: rgba(0,0,0,.5);
     background-image: linear-gradient(0deg,transparent 50%,rgba(0,0,0,.7)),radial-gradient(50% 100%,transparent 0,rgba(0,0,0,.7) 100%);
