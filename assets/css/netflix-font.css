@@ -1,5 +1,9 @@
-/* NETFLIX FONT CDN */
+/* Fonts */
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url('http://fonts.cdnfonts.com/css/helvetica-255');
+@import url('http://fonts.cdnfonts.com/css/arial');
 
+/* NETFLIX FONT CDN */
 @font-face {
   font-family: 'Netflix Sans';
   font-weight: 100;
@@ -53,6 +57,8 @@
 .netflix-sans-font-loaded.graphik-font-loaded {
   font-family: GraphikTH,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
 }
+
+
 
 /* WEBSITE ICONS */
 @font-face {
