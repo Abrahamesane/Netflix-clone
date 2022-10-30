@@ -1126,53 +1126,163 @@ button {
 }
 
 /* FOOTER */
-.sub-links ul {
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: rgb(151, 142, 142);
-  list-style: none;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 0;
-  margin-inline: 100px;
-}
 
-.sub-links li {
+.footer-links li {
+  font-size: 13.5px;
+  padding: px;
+  text-align: left;
+  color: rgb(122, 121, 121);
+  margin: 0px;
+  margin-left: 5px;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 5px;
   list-style-type: none;
+  padding-left: 45px;
+  position: relative; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.sub-link li {
-  font-size: medium;
-  margin: 13px;
+.footer-links ul {
+    font-size: 13.5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(122, 121, 121);
+    list-style: none; 
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(4, 0.18fr);
+    padding: 0;
+    padding-left: 170px;
 }
 
-.sub-links a {
-  color: var(--dark);
-  text-decoration: none;
+#tel {
+  font-size: 16px;
+  
 }
 
-.sub-links a:hover {
+  .footer-links a:hover {
   color: var(--dark);
   text-decoration: underline;
-}
+  }
+  
+   .footer-links a {
+  color: var(--dark);
+  text-decoration: none;
+   }
+   
+   
 
-footer {
-  font-size: small;
-  padding: 100px;
-  text-align: left;
-  color: rgb(151, 142, 142);
-  margin: 10px;
-  bottom: 0px;
-  list-style-type: none;
-}
 
-.footer li {
-  padding: 14px;
-  list-style-type: none;
-  margin-inline: 100px;
-  position: absolute;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+  /* Language selector */
+
+  .language {
+    margin-inline: 108px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+    
+  }
+  .lang-selection-container {
+    margin-top: 20px;
+    display: inline-block;
+    margin: 0 7.1rem;
+  }
+  
+  .ul-select-wrapper {
+    display:block;
+    position:absolute;
+  }
+
+  ul-label, .ul-label-no-margin {
+    color: rgb(122, 121, 121);;
+    display: block;
+    font-size: 16px;
+    
+  }
+  
+  .lang-selection-container .ul-label {
+    clip: rect(0 0 0 0);
+    border: 0;
+    display: block;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  /* lang-switcher::before */
+ 
+  .ul-select-wrapper .select-arrow.prefix:before {
+    
+    font-family: nf-icon;
+    position: absolute;
+    
+  }
+
+  .lang-selection-container .ul-select-wrapper .select-arrow.prefix:before {
+    top: 14px;
+    padding-right: 20px;
+  }
+
+  .ul-select-wrapper .select-arrow.prefix.globe:before {
+    content: "\e896"; 
+  }
+
+  .lang-selection-container .select-arrow.prefix:before, 
+  .lang-selection-container .select-arrow:after {
+    color: rgb(122, 121, 121);
+    transform: translateY(-0%);
+    padding: 2px;
+  } 
+
+  .lang-selection-container .select-arrow.prefix:before {
+    font-size: 1rem;
+    left: 0.55rem;
+  }
+  
+  /* lang-switcher - header */
+  .ul-select{
+    appearance: none;
+    width: 139px;
+  }
+
+  .lang-selection-container .select-arrow.prefix .ul-select {
+    background: rgba(1, 1, 3, 2.4);
+    border: 0.1px solid rgb(82, 76, 76);
+    color: rgb(168, 164, 164);
+    font-size: .99rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.55rem;
+  }
+  
+  .lang-selection-container .select-arrow.prefix .ul-select.medium {
+    line-height: 2.3em;
+    overflow: hidden;
+    padding-left: 2.375rem;
+    padding-right: 2.375rem;
+    white-space: nowrap;
+  }
+
+  /* lang-switcher::after */
+  .ul-select-wrapper .select-arrow:after {
+    color: rgb(122, 121, 121);
+    content: "\e898";
+    font-family: nf-icon;
+    font-size: 6.7px;
+    pointer-events: none;
+    position:absolute;
+    padding: 6px;
+    
+  }
+
+  .ul-select-wrapper .select-arrow.medium:after {
+    right: 10px;
+    top: 18px;
+  }
+
+
+  
+=======
+/* START HERE */
+
