@@ -982,7 +982,7 @@ button {
   overflow: visible;
   font: inherit;
   text-transform: none;
-  -webkit-appearance: button;
+  
 }
 
 .btn {
@@ -1176,3 +1176,167 @@ footer {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+/* Frequently Asked Questions  Style PART*/
+
+
+
+
+.faq-card {
+  background: transparent; 
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+}
+
+@media only screen and (min-width: 1450px), 
+only screen and (min-width: 550px) and (max-width: 949px), 
+only screen and (min-width: 950px) and (max-width: 1449px) {
+.faq-card {
+  padding: 70px 45px;
+}
+}
+
+.faq-content {
+  font-weight: 400;
+  font-size: 1.625rem;
+}
+
+.faq-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+ text-align: center;
+}
+
+
+
+ul {
+padding: 0;
+}
+
+
+  
+
+.faq-list {
+margin: 1.25em auto;
+max-width: 815px; 
+}
+
+@media only screen and (min-width: 1450px), 
+only screen and (min-width: 950px) and (max-width: 1449px) {
+  .faq-card .faq-list {
+      margin: 2em auto;
+      width: 75%;
+  }
+}
+
+.faq-list-item {
+  list-style-type: none;
+  margin: 0 0 8px;
+  
+
+}
+
+ul>li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  margin-left: 1.1em;
+}
+
+.faq-card .faq-question {
+  border: 0;
+  font-weight: 400;
+  margin-bottom: 1px;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  position: relative;
+  width: 100%;
+}
+
+.faq-card .faq-question {
+  background: #303030;
+  display: block;
+  text-align: left;
+  
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.membership {
+  text-align: center;
+
+}
+.membutton {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  font-size: 16px;
+  
+
+}
+.plus-icon {
+  fill: #fff;
+  height: 1em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);  
+}
+/*.email-form-title {
+  font-weight: 400;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+@media screen and (min-width: 740px) {
+  h3 {
+      font-size: 23px;
+  }
+  
+}*/
+
+
+
+
+.input-email {
+  text-align: center;
+  
+}
+.email-text-field {
+  padding: 1.5em;
+  width: 50%;
+}
+.submit-button {
+  text-align: center;
+  padding: 0.35rem 0;
+
+}
+.faq-btn {
+  padding: 1em;
+  background-color: red;
+  
+
+}
+
+.btn-text {
+  font-size: 1.5rem;
+
+}
+/* MFQ Part style end here*/
