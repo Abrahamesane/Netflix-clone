@@ -1127,64 +1127,143 @@ button {
 
 /* FOOTER */
 
-.footer-links li {
-  font-size: 13.5px;
-  padding: px;
-  text-align: left;
-  color: rgb(122, 121, 121);
-  margin: 0px;
-  margin-left: 5px;
-  position: absolute;
-  margin-top: 10px;
-  margin-right: 5px;
-  list-style-type: none;
-  padding-left: 45px;
-  position: relative; 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+div {
+    display: block;
 }
-
-.footer-links ul {
-    font-size: 13.5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(122, 121, 121);
-    list-style: none; 
-    display: grid;
-    grid-gap: 7px;
-    grid-template-columns: repeat(4, 0.18fr);
-    padding: 0;
-    padding-left: 170px;
+.footer-card {
+    margin: 0 auto;
+    max-width: 1000px;
 }
-
-#tel {
-  font-size: 16px;
+.footer-wrapper {
+    margin-top: 0;
+}
+.footer-wrapper {
+    color: #737373;
+    font-size: 1em;
+    min-width: 190px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+.site-footer {
+    padding-top: 0;
+}
+.site-footer {
+    margin: 0 auto;
   
+    width: 90%;
+}
+.footer-top {
+    margin: 0 0 30px;
+    padding: 0;
+    padding-top: 70px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-  .footer-links a:hover {
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.footer-top-a {
+    color: #737373;
+}
+
+a {
+  background-color: transparent;
+    text-decoration: none;
+}
+
+ul.footer-links {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links {
+    box-sizing: border-box;
+    font-size: 13px;
+    max-width: 1000px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-links a:hover {
   color: var(--dark);
   text-decoration: underline;
-  }
-  
-   .footer-links a {
+}
+
+.footer-top-a:hover {
   color: var(--dark);
-  text-decoration: none;
-   }
-   
-   
+  text-decoration: underline;
+}
 
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 
+ul.footer-links>li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-link-item {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 16px;
+    min-width: 100px;
+    padding: 0 12px 0 0;
+    vertical-align: top;
+    width: 24%;;
+}
+
+.footer-link-a {
+    color: #737373;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+/* Screen responsive of 740px and 500px */
+
+@media only screen and (max-width: 740px){
+  .footer-link-item {
+    width: 25%;
+}
+}
+@media only screen and (max-width: 500px) {
+  .footer-link-item {
+    width: 42%;
+}
+}
   /* Language selector */
 
   .language {
-    margin-inline: 108px;
-    padding-bottom: 70px;
-    padding-top: 10px;
-    
+    margin-inline: 1px;
+    padding-bottom: 50px;
+    padding-top: 18px;
+    margin: 0;  
+
   }
   .lang-selection-container {
     margin-top: 20px;
-    display: inline-block;
-    margin: 0 7.1rem;
+    display: flex;
+    margin: -2rem;
+    padding-top: 35px;
+    margin-left: 1px;
+    
   }
   
   .ul-select-wrapper {
@@ -1204,7 +1283,7 @@ button {
     border: 0;
     display: block;
     height: 1px;
-    margin: -1px;
+    margin: -2px;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
@@ -1233,7 +1312,7 @@ button {
   .lang-selection-container .select-arrow:after {
     color: rgb(122, 121, 121);
     transform: translateY(-0%);
-    padding: 2px;
+    padding : 2px;
   } 
 
   .lang-selection-container .select-arrow.prefix:before {
@@ -1259,7 +1338,7 @@ button {
   .lang-selection-container .select-arrow.prefix .ul-select.medium {
     line-height: 2.3em;
     overflow: hidden;
-    padding-left: 2.375rem;
+    padding-left: 2.475rem;
     padding-right: 2.375rem;
     white-space: nowrap;
   }
@@ -1277,12 +1356,10 @@ button {
   }
 
   .ul-select-wrapper .select-arrow.medium:after {
-    right: 10px;
+    right: 12px;
     top: 18px;
   }
 
-
-  
 =======
 /* START HERE */
 
