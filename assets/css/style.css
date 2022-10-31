@@ -352,76 +352,6 @@ label {
   left: 0.5rem;
 }
 
-/* probably uselles */
-/* lang-switcher - header
-.ui-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: #fff;
-  border: 1px solid #b3b3b3;
-  border-radius: 2px;
-  font-size: 16px;
-  width: 100%;
-}
-
-.lang-selection-container .ui-select {
-  background-color: #fff;
-  background-image: linear-gradient(180deg, #fff, #f7f7f7);
-  font-size: 13px;
-}
-
-.ui-select.medium {
-  padding: 12px;
-}
-
-.ui-select-wrapper .select-arrow.prefix .ui-select.medium {
-  line-height: 1.7;
-  padding-left: 50px;
-  text-indent: 2px;
-}
-
-.our-story-language-selector
-  .lang-selection-container
-  .select-arrow.prefix
-  .ui-select {
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid #aaa;
-  color: #fff;
-  font-size: 0.875rem;
-  padding: 0.25rem 1.375rem;
-}
-
-@media only screen and (min-width: 1450px),
-  only screen and (min-width: 550px) and (max-width: 949px),
-  only screen and (min-width: 950px) and (max-width: 1449px) {
-  .our-story-language-selector
-    .lang-selection-container
-    .select-arrow.prefix
-    .ui-select {
-    padding: 0.5rem 1.375rem;
-  }
-}
-
-.lang-selection-container
-  .ui-select-wrapper
-  .select-arrow.prefix
-  .ui-select.medium {
-  padding-right: 26px;
-  text-indent: 0;
-}
-
-.our-story-language-selector
-  .lang-selection-container
-  .select-arrow.prefix
-  .ui-select.medium {
-  line-height: 1.3em;
-  overflow: hidden;
-  padding-left: 1.375rem;
-  padding-right: 1.375rem;
-  white-space: nowrap;
-} */
-
 /* options */
 option {
   font-weight: normal;
@@ -430,21 +360,6 @@ option {
   min-height: 1.2em;
   padding: 0px 2px 1px;
 }
-
-/* probably uselles */
-/* lang-switcher::after */
-/* .ui-select-wrapper .select-arrow:after {
-  color: #000;
-  content: "\e898";
-  font-family: nf-icon;
-  font-size: 6px;
-  pointer-events: none;
-  position: absolute;
-} */
-/* .ui-select-wrapper .select-arrow.medium:after {
-  right: 10px;
-  top: 18px;
-} */
 
 /* Sing in button */
 
@@ -1129,6 +1044,11 @@ button {
 
 /*Sections styles*/
 /*Section A - code*/
+
+.story-cards1,  .story-cards2 {
+  padding: 70px 45px;
+}
+
 .story-c .story-card-animation {
   height: 100%;
   left: 50%;
@@ -1187,184 +1107,23 @@ section div.our-section-title{
   top: 0;
 } */
 
-.our-section-image{
+/* .our-section-image{
   position: relative;
   left: 0;
   top: 0;
   z-index: 2;
-}
+} */
 
-.video-section{
+
+
+/* .video-section{
   position: absolute;
   top: 62px;
   left: 52px;
   width: 293px;
   z-index: 1;
-}
+} */
 
-/* Frequently Asked Questions  Style PART*/
-
-
-
-
-.faq-card {
-  background: transparent; 
-  border-bottom: 8px solid #222;
-  color: #fff;
-  margin-bottom: 0;
-  padding: 50px 5%;
-  position: relative;
-}
-
-@media only screen and (min-width: 1450px), 
-only screen and (min-width: 550px) and (max-width: 949px), 
-only screen and (min-width: 950px) and (max-width: 1449px) {
-.faq-card {
-  padding: 70px 45px;
-}
-}
-
-.faq-content {
-  font-weight: 400;
-  font-size: 1.625rem;
-}
-
-.faq-title {
-  font-size: 3.125rem;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
- text-align: center;
-}
-
-
-
-ul {
-padding: 0;
-}
-
-
-  
-
-.faq-list {
-margin: 1.25em auto;
-max-width: 815px; 
-}
-
-@media only screen and (min-width: 1450px), 
-only screen and (min-width: 950px) and (max-width: 1449px) {
-  .faq-card .faq-list {
-      margin: 2em auto;
-      width: 75%;
-  }
-}
-
-.faq-list-item {
-  list-style-type: none;
-  margin: 0 0 8px;
-  
-
-}
-
-ul>li {
-  list-style-type: disc;
-  margin-bottom: 5px;
-  margin-left: 1.1em;
-}
-
-.faq-card .faq-question {
-  border: 0;
-  font-weight: 400;
-  margin-bottom: 1px;
-  padding: 0.8em 2.2em 0.8em 1.2em;
-  position: relative;
-  width: 100%;
-}
-
-.faq-card .faq-question {
-  background: #303030;
-  display: block;
-  text-align: left;
-  
-}
-
-button, html input[type=button], input[type=reset], input[type=submit] {
-  cursor: pointer;
-}
-
-button, select {
-  text-transform: none;
-}
-
-button {
-  overflow: visible;
-}
-
-button, input, optgroup, select, textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-.membership {
-  text-align: center;
-
-}
-.membutton {
-  background-color: red;
-  color: white;
-  padding: 1rem;
-  font-size: 16px;
-  
-
-}
-.plus-icon {
-  fill: #fff;
-  height: 1em;
-  position: absolute;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);  
-}
-/*.email-form-title {
-  font-weight: 400;
-  max-width: 450px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-@media screen and (min-width: 740px) {
-  h3 {
-      font-size: 23px;
-  }
-  
-}*/
-
-
-
-
-.input-email {
-  text-align: center;
-  
-}
-.email-text-field {
-  padding: 1.5em;
-  width: 50%;
-}
-.submit-button {
-  text-align: center;
-  padding: 0.35rem 0;
-
-}
-.faq-btn {
-  padding: 1em;
-  background-color: red;
-  
-
-}
-
-.btn-text {
-  font-size: 1.5rem;
-
-}
 /* MFQ Part style end here*/
 
 /* probably uselles */
@@ -1373,17 +1132,20 @@ button, input, optgroup, select, textarea {
 } */
 
 /*our-section2*/
-.our-section2{
+/* .our-section2{
   display: flex;
   border-bottom: 8px solid #222;
   justify-content: space-between;
   align-items: center;
   margin: 12px;
+  padding: 70px 45px;
 }
+
 
 .our-section2-image{
   position: relative;
   max-width: 100%;
+  order: 2;
 }
 
 .our-section2-text h1{
@@ -1397,7 +1159,7 @@ button, input, optgroup, select, textarea {
   color: white;
   font-size: 30px;
   
-}
+} */
 
 section div.our-download-image{
   background-color: #000;
@@ -1556,24 +1318,7 @@ section div.our-download-image img{
 
 /* START HERE */
 /* Mihai Part CSS*/
-html {
-  font-family: Netflix Sans;
-}
-body{
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      background-color: #000000;
-      color: #333;
-      direction: ltr;
-      font-family: Netflix Sans;
-      font-size: 16px;
-}
-* {
-  letter-spacing: 0!important;
-}
-div {
-  display: block;
-}
+
 .story-cards1 {
   background: transparent;
   border-bottom: 8px solid #222;
@@ -1646,12 +1391,13 @@ video {
   height: 100%;
   width: 100%;
 }
+
 .story-cards2 {
   background: transparent;
   border-bottom: 8px solid #222;
   color: #fff;
   margin-bottom: 0;
-  padding: 50px 0%;
+  /* padding: 50px 0%; */
   position: relative;
 }
 .animation-card-container2 {
@@ -1717,6 +1463,162 @@ video {
       display: flex;
       flex-direction: column;
   }
+}
+
+/* Frequently Asked Questions  Style PART*/
+
+.faq-card {
+  background: transparent; 
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+}
+
+@media only screen and (min-width: 1450px), 
+only screen and (min-width: 550px) and (max-width: 949px), 
+only screen and (min-width: 950px) and (max-width: 1449px) {
+.faq-card {
+  padding: 70px 45px;
+}
+}
+
+.faq-content {
+  font-weight: 400;
+  font-size: 1.625rem;
+}
+
+.faq-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+ text-align: center;
+}
+
+
+/* 
+ul {
+padding: 0;
+} */
+
+.faq-list {
+margin: 1.25em auto;
+max-width: 815px; 
+}
+
+@media only screen and (min-width: 1450px), 
+only screen and (min-width: 950px) and (max-width: 1449px) {
+  .faq-card .faq-list {
+      margin: 2em auto;
+      width: 75%;
+  }
+}
+
+.faq-list-item {
+  list-style-type: none;
+  margin: 0 0 8px;
+  
+
+}
+
+ul>li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  margin-left: 1.1em;
+}
+
+.faq-card .faq-question {
+  border: 0;
+  font-weight: 400;
+  margin-bottom: 1px;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  position: relative;
+  width: 100%;
+}
+
+.faq-card .faq-question {
+  background: #303030;
+  display: block;
+  text-align: left;
+  
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.membership {
+  text-align: center;
+
+}
+.membutton {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  font-size: 16px;
+  
+
+}
+.plus-icon {
+  fill: #fff;
+  height: 1em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);  
+}
+/*.email-form-title {
+  font-weight: 400;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+@media screen and (min-width: 740px) {
+  h3 {
+      font-size: 23px;
+  }
+  
+}*/
+
+
+.input-email {
+  text-align: center;
+  
+}
+.email-text-field {
+  padding: 1.5em;
+  width: 50%;
+}
+.submit-button {
+  text-align: center;
+  padding: 0.35rem 0;
+
+}
+.faq-btn {
+  padding: 1em;
+  background-color: red;
+  
+
+}
+
+.btn-text {
+  font-size: 1.5rem;
+
 }
 
 /* FOOTER */
