@@ -1129,7 +1129,19 @@ button {
 
 /*Sections styles*/
 /*Section A - code*/
-.our-section{
+.story-c .story-card-animation {
+  height: 100%;
+  left: 50%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+
+/* maybe discard them later */
+/* .our-section{
   background-color: black;
   color: white;
   display: grid;
@@ -1173,7 +1185,7 @@ section div.our-section-title{
   width: 400px;
   left: 0;
   top: 0;
-}
+} */
 
 .our-section-image{
   position: relative;
@@ -1354,15 +1366,16 @@ button, input, optgroup, select, textarea {
 
 }
 /* MFQ Part style end here*/
-=======
 
-.video-section video{
+/* probably uselles */
+/* .video-section video{
   width: 100%;
-}
+} */
 
 /*our-section2*/
 .our-section2{
   display: flex;
+  border-bottom: 8px solid #222;
   justify-content: space-between;
   align-items: center;
   margin: 12px;
