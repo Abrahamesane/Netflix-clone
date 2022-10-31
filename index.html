@@ -269,17 +269,43 @@
                   </li>
                 </ul>
               </div>
-              <form class="cta-form email-form">
-                <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
-                <div class="input-email">
-                  <input type="text" placeholder="Email Address" class="email-text-field" maxlength="50" minlength="20">
+              <form class="cta-form email-form faq-form" method="GET">
+                <h3 class="email-form-title">
+                  Ready to watch? Enter your email to create or restart your membership.
+                </h3>
+                <div class="email-form-lockup">
+                  <ul class="simpleForm structural ui-grid">
+                    <li class="nfFormSpace field-email">
+                      <div class="nfInput nfInputResponsive">
+                        <div class="nfInputPlacement">
+                          <label class="input_id" placeholder="email">
+                            <input type="email" data-uia="field-email" name="email" class="nfTextField"
+                              id="id_email_hero_fuji" value="" tabindex="0" autocomplete="email" maxlength="50"
+                              minlength="5" dir="">
+                            <label for="id_email_hero_fuji" class="placeLabel">Email address</label>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="our-story-cta-container cta-link-wrapper">
+                    <button class="btn btn-red nmhp-cta nmhp-cta-extra-large btn-none btn-custom" type="submit"
+                      autocomplete="off" tabindex="0" role="link" data-uia="our-story-cta-hero_fuji">
+                      <span id="" class="cta-btn-txt" data-uia="">
+                        Get Started
+                      </span>
+                      <span id="" class="chevron-right-arrow" data-uia="">
+                        <svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                          <desc>
+                            chevron
+                          </desc>
+                          <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="none"
+                            fill-rule="evenodd"></path>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
                 </div>
-                <div class="submit-button">
-                  <button class="btn" type="submit">
-                    <span class="btn-text">Get Started</span>
-                  </button>
-                </div>
-
               </form>
 
             </div>
