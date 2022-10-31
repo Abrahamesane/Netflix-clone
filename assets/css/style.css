@@ -19,6 +19,7 @@ audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -982,7 +983,7 @@ button {
   overflow: visible;
   font: inherit;
   text-transform: none;
-  -webkit-appearance: button;
+  
 }
 
 .btn {
@@ -1236,6 +1237,295 @@ a {
     background-color: transparent;
 }
 
+/*Sections styles*/
+/*Section A - code*/
+.our-section{
+  background-color: black;
+  color: white;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+  border-bottom: 8px #2c2c2c solid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 550px){
+  section div.our-section{
+   grid-template-columns: 1fr 1fr;
+   gap: 46px;
+   text-align: left;
+ } 
+}
+section div.our-section-title{
+  margin-left: 10px;
+}
+@media screen and (min-width: 550px){
+  section div.our-section-title h1{
+    font-size: 50px;
+    text-align: top;
+  }
+}
+.our-section-title h1{
+  font-size: 1.625rem;
+}
+.our-section-title p{
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 550px){
+  section div.our-section-title p{
+    font-size: 25px;
+  }
+}
+
+.image-section{
+  position: relative;
+  width: 400px;
+  left: 0;
+  top: 0;
+}
+
+.our-section-image{
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.video-section{
+  position: absolute;
+  top: 62px;
+  left: 52px;
+  width: 293px;
+  z-index: 1;
+}
+
+/* Frequently Asked Questions  Style PART*/
+
+
+
+
+.faq-card {
+  background: transparent; 
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+}
+
+@media only screen and (min-width: 1450px), 
+only screen and (min-width: 550px) and (max-width: 949px), 
+only screen and (min-width: 950px) and (max-width: 1449px) {
+.faq-card {
+  padding: 70px 45px;
+}
+}
+
+.faq-content {
+  font-weight: 400;
+  font-size: 1.625rem;
+}
+
+.faq-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+ text-align: center;
+}
+
+
+
+ul {
+padding: 0;
+}
+
+
+  
+
+.faq-list {
+margin: 1.25em auto;
+max-width: 815px; 
+}
+
+@media only screen and (min-width: 1450px), 
+only screen and (min-width: 950px) and (max-width: 1449px) {
+  .faq-card .faq-list {
+      margin: 2em auto;
+      width: 75%;
+  }
+}
+
+.faq-list-item {
+  list-style-type: none;
+  margin: 0 0 8px;
+  
+
+}
+
+ul>li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  margin-left: 1.1em;
+}
+
+.faq-card .faq-question {
+  border: 0;
+  font-weight: 400;
+  margin-bottom: 1px;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  position: relative;
+  width: 100%;
+}
+
+.faq-card .faq-question {
+  background: #303030;
+  display: block;
+  text-align: left;
+  
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.membership {
+  text-align: center;
+
+}
+.membutton {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  font-size: 16px;
+  
+
+}
+.plus-icon {
+  fill: #fff;
+  height: 1em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);  
+}
+/*.email-form-title {
+  font-weight: 400;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+@media screen and (min-width: 740px) {
+  h3 {
+      font-size: 23px;
+  }
+  
+}*/
+
+
+
+
+.input-email {
+  text-align: center;
+  
+}
+.email-text-field {
+  padding: 1.5em;
+  width: 50%;
+}
+.submit-button {
+  text-align: center;
+  padding: 0.35rem 0;
+
+}
+.faq-btn {
+  padding: 1em;
+  background-color: red;
+  
+
+}
+
+.btn-text {
+  font-size: 1.5rem;
+
+}
+/* MFQ Part style end here*/
+=======
+
+.video-section video{
+  width: 100%;
+}
+
+/*our-section2*/
+.our-section2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px;
+}
+
+.our-section2-image{
+  position: relative;
+  max-width: 100%;
+}
+
+.our-section2-text h1{
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.our-section2-text p{
+  color: white;
+  font-size: 30px;
+  
+}
+
+section div.our-download-image{
+  background-color: #000;
+  border: 2px solid #666;
+  color: white;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  height: 80px;
+  bottom: 10px;
+  width: 400px;
+  left: 38%;
+  margin-left: -135px;
+  display: grid;
+  position: absolute;
+  grid-template-columns: max-content 1fr max-content 1fr;
+  gap: 10px;
+}
+
+section div.our-download-image img{
+  height: 75px;
+  width: auto;
+  max-width: 100%;
+}
+
+.download-text{
+  color: rgb(42, 42, 246);
+  line-height: 1.2em;
+}
+
 /* Screen responsive of 740px and 500px */
 
 @media only screen and (max-width: 740px){
@@ -1243,6 +1533,7 @@ a {
     width: 25%;
 }
 }
+
 @media only screen and (max-width: 500px) {
   .footer-link-item {
     width: 42%;
@@ -1360,7 +1651,6 @@ a {
     top: 18px;
   }
 
-=======
 /* START HERE */
 /* Mihai Part CSS*/
 html {
