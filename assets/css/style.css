@@ -1060,124 +1060,29 @@ button {
   width: 100%;
 }
 
-/* maybe discard them later */
-/* .our-section{
-  background-color: black;
-  color: white;
-  display: grid;
-  text-align: center;
-  align-items: center;
-  margin-top: 100px;
-  border-bottom: 8px #2c2c2c solid;
-  grid-template-columns: 1fr 1fr;
-}
-@media screen and (min-width: 550px){
-  section div.our-section{
-   grid-template-columns: 1fr 1fr;
-   gap: 46px;
-   text-align: left;
- } 
-}
-section div.our-section-title{
-  margin-left: 10px;
-}
-@media screen and (min-width: 550px){
-  section div.our-section-title h1{
-    font-size: 50px;
-    text-align: top;
-  }
-}
-.our-section-title h1{
-  font-size: 1.625rem;
-}
-.our-section-title p{
-  font-size: 1rem;
-}
-
-@media screen and (min-width: 550px){
-  section div.our-section-title p{
-    font-size: 25px;
-  }
-}
-
-.image-section{
-  position: relative;
-  width: 400px;
-  left: 0;
-  top: 0;
-} */
-
-/* .our-section-image{
-  position: relative;
-  left: 0;
-  top: 0;
-  z-index: 2;
-} */
-
-
-
-/* .video-section{
-  position: absolute;
-  top: 62px;
-  left: 52px;
-  width: 293px;
-  z-index: 1;
-} */
-
-/* MFQ Part style end here*/
-
-/* probably uselles */
-/* .video-section video{
-  width: 100%;
-} */
-
-/*our-section2*/
-/* .our-section2{
-  display: flex;
-  border-bottom: 8px solid #222;
-  justify-content: space-between;
-  align-items: center;
-  margin: 12px;
-  padding: 70px 45px;
-}
-
-
-.our-section2-image{
-  position: relative;
-  max-width: 100%;
-  order: 2;
-}
-
-.our-section2-text h1{
-  color: white;
-  font-size: 60px;
-  font-weight: bold;
-  margin-right: 50px;
-}
-
-.our-section2-text p{
-  color: white;
-  font-size: 30px;
-  
-} */
 
 section div.our-download-image{
-  background-color: #000;
-  border: 2px solid #666;
-  color: white;
-  text-align: center;
   align-items: center;
-  border-radius: 15px;
-  padding: 10px;
-  height: 80px;
-  bottom: 10px;
-  width: 400px;
-  left: 38%;
-  margin-left: -135px;
-  display: grid;
+  background: #000;
+  border: 2px solid hsla(0,0%,100%,.25);
+  border-radius: 0.75em;
+  bottom: 8%;
+  box-shadow: 0 0 2em 0 #000;
+  display: flex;
+  left: 50%;
+  margin: 0 auto;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
   position: absolute;
-  grid-template-columns: max-content 1fr max-content 1fr;
-  gap: 10px;
+  transform: translateX(-50%);
+  width: 60%;
+}
+
+@media only screen and (min-width: 1450px), 
+only screen and (min-width: 950px) and (max-width: 1449px) {
+  section div.our-download-image {
+      padding: 0.5em 0.75em;
+  }
 }
 
 section div.our-download-image img{
@@ -1276,7 +1181,7 @@ section div.our-download-image img{
     left: 0.55rem;
   }
   
-  /* lang-switcher - header */
+  /* lang-switcher - footer */
   .ul-select{
     appearance: none;
     width: 139px;
@@ -1364,11 +1269,7 @@ section div.our-download-image img{
   margin-inline-end: 0px;
   margin: 0.75em 0 0.25em;
 }
-img {
-  border: 0;
-  height: auto;
-  max-width: 100%;
-}
+
 .story-card-img{
   position: relative;
   z-index: 2;
