@@ -1423,6 +1423,7 @@ ul.footer-links>li {
   padding: 0 12px 0 0;
   vertical-align: top;
   width: 24%;;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .footer-link-a {
@@ -1435,6 +1436,19 @@ a {
 
 a {
   background-color: transparent;
+}
+
+/* Screen responsive footer */
+@media only screen and (max-width: 740px) {
+.footer-link-item {
+    width: 33%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+.footer-link-item {
+    width: 50%;
+	}
 }
 
  /* Language selector */
